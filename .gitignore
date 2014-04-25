@@ -1,0 +1,36 @@
+# System stuff
+.DS_Store
+.bundle
+.idea
+.rake_tasks
+.rvmrc
+.powenv
+.env
+REVISION
+vendor/bundle
+.rake_tasks~
+mkmf.log
+
+# Local config files
+config/database.yml
+
+# Local DBs
+db/sphinx
+db/*.sqlite3
+
+# Logs
+log/*.log
+log/*.pid
+
+# Tempfiles
+tmp/
+tmp/**/*
+coverage
+capybara*
+
+# Assets
+public/system
+public/static
+public/uploads
+/assets
+packages
