@@ -25,8 +25,14 @@ class ForwardMailer < ActionMailer::Base
     ForwardingAddress.by_source_emails(*email.to.map { |r| r[:email] }).map(&:recipient_emails).flatten
   end
 
+  def forward_via_from_griddler_email(email)
+    original_recipients = email.to.map { |r| r[:email] }
+    source_emails = ForwardingAddress.by_source_emails(*original_recipients).map(&:source_emails).flatten
+    source_emails & original_recipients
+  end
+
   def sender_from_griddler_email(email)
-    "\"#{email.from} (via forwarder)\" <#{ENV['FORWARDING_FROM_ADDRESS']}>"
+    "\"#{email.from} (via #{forward_via_from_griddler_email(email) * ', '})\" <#{ENV['FORWARDING_FROM_ADDRESS']}>"
   end
 
 end

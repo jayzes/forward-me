@@ -37,7 +37,7 @@ describe 'forwarding inbound e-mails', job: true do
     it 'sends a forwarded e-mail' do
       email = ActionMailer::Base.deliveries.first
       expect(email.from).to include('forwarder@example.com')
-      expect(email[:from].display_names).to include('jay.zeschin@example.com (via forwarder)')
+      expect(email[:from].display_names).to include('jay.zeschin@example.com (via info@example.com)')
       expect(email.to).to include('jay@example.com')
       expect(email.to).to include('hello@me.com')
       expect(email.subject).to eq('Hello!')
