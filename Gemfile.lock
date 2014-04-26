@@ -170,8 +170,6 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0.4)
-    shoulda-matchers (2.6.0)
-      activesupport (>= 3.0.0)
     slop (3.5.0)
     spring (1.1.2)
     spring-commands-rspec (1.0.2)
@@ -229,7 +227,6 @@ DEPENDENCIES
   rspec-rails!
   sass-rails (~> 4.0.3)
   selenium-webdriver
-  shoulda-matchers
   spring
   spring-commands-rspec
   teaspoon!
