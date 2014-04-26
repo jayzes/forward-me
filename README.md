@@ -1,7 +1,9 @@
 # Forward Me
 [![Build Status](https://travis-ci.org/jayzes/forward-me.png)](https://travis-ci.org/jayzes/forward-me)
 
-A simple self-hosted e-mail forwarder making use of the Sendgrid Parse API
+A simple self-hosted e-mail forwarder making use of the Sendgrid Parse API.
+
+Lets you set up simple e-mail forwarding on a domain that you don't have/want e-mail hosting for. Perfect for generic info@ addresses for side projects!
 
 ## Requirements
 - Ruby 1.9.3 (or newer)
