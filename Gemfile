@@ -13,6 +13,7 @@ gem "newrelic_rpm"
 gem "haml-rails"
 
 gem 'griddler'
+gem 'sucker_punch'
 
 group :development, :test do
   gem 'spring'
