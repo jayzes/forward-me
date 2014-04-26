@@ -1,0 +1,13 @@
+language: ruby
+cache: bundler
+bundler_args: --without staging,production
+rvm:
+- 2.1.1
+before_script:
+- cp config/database.travis.yml config/database.yml
+- cp .env.example .env
+script:
+- bundle exec rake db:drop:all
+- bundle exec rake db:create:all
+- bundle exec rake db:schema:load
+- bundle exec rake --trace
