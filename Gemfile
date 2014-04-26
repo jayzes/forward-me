@@ -17,7 +17,7 @@ gem 'griddler'
 group :development, :test do
   gem 'spring'
   gem "spring-commands-rspec", require: false
-  gem "rspec-rails", github: "rspec/rspec-rails"
+  gem "rspec-rails", '~> 3.0.0.beta'
   gem "teaspoon", github: "modeset/teaspoon"
   gem "dotenv-rails"
   gem "pry-rails"
