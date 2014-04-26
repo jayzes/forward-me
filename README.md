@@ -10,7 +10,7 @@ recipients)
 
 ## Installation
 - Clone this repo locally: `git clone git@github.com:jayzes/forward-me.git`
-- Set up a new Heroku app and push to it: `heroku create <my-forward-me-instance> && git push heroku master`
+- Set up a new Heroku app and push to it: `heroku create <my-forward-me-instance> && git push heroku master && heroku run rake db:migrate`
 - Configure a secret key for the app: `heroku config:set SECRET_KEY_BASE=\`rake secret\``
 - Configure the Sendgrid starter addon: `heroku addons:add sendgrid`
 - Configure an inbound parse API redirect in the Sendgrid addon settings. You'll
