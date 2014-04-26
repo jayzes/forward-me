@@ -1,4 +1,5 @@
 # Forward Me
+[![Build Status](https://travis-ci.org/jayzes/forward-me.png)](https://travis-ci.org/jayzes/forward-me)
 
 A simple self-hosted e-mail forwarder making use of the Sendgrid Parse API
 
