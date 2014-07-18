@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe ForwardingAddress do
 
+
   describe 'searching by source emails' do
     let!(:record) { ForwardingAddress.create! source_emails: ['info@example.com', 'sales@example.com'], recipient_emails: [ 'someguy@example.com' ] }
 
