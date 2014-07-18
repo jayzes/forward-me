@@ -2,7 +2,7 @@ language: ruby
 cache: bundler
 bundler_args: --without staging,production
 rvm:
-- 2.1.1
+- 2.1.2
 before_script:
 - cp config/database.travis.yml config/database.yml
 - cp .env.example .env
